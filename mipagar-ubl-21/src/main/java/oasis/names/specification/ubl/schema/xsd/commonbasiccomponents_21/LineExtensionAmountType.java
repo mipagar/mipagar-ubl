@@ -1,0 +1,40 @@
+
+package oasis.names.specification.ubl.schema.xsd.commonbasiccomponents_21;
+
+import java.math.BigDecimal;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+import oasis.names.specification.ubl.schema.xsd.unqualifieddatatypes_21.AmountType;
+
+
+/**
+ * <p>Java class for LineExtensionAmountType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="LineExtensionAmountType">
+ *   &lt;simpleContent>
+ *     &lt;extension base="&lt;urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2>AmountType">
+ *     &lt;/extension>
+ *   &lt;/simpleContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "LineExtensionAmountType")
+public class LineExtensionAmountType extends AmountType {
+
+    public LineExtensionAmountType() {
+    }
+
+    public LineExtensionAmountType(BigDecimal amount, String currencyID) {
+        this.value = amount;
+        this.currencyID = currencyID;
+    }
+
+
+}
