@@ -27,7 +27,11 @@
     <distributionManagement>
         <repository>
             <id>mipagar-public-repository-group</id>
-            <url>http://nexus.mipagar.com/content/repositories/mipagar-public/</url>
+            <url>http://nexus.billingstreet.com/content/repositories/releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>billingstreet-private</id>
+            <url>http://nexus.billingstreet.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
